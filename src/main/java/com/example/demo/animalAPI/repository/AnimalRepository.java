@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
 
-import com.example.demo.sampleAPI.data.Animals;
+import com.example.demo.animalAPI.data.Animals;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Repository

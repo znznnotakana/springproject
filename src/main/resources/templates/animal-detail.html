@@ -9,7 +9,7 @@
 		
 		<form action="animal-search" method="get">
 			
-			<ul th:each="animal:${animalsList2}">
+			<ul th:each="animal:${animalsList}">
 				<p th:text="'NO: '+${animal.id}"></p>
 				<p th:text="'英名：' + ${animal.name}"></p>
 				<p th:text="'和名：' + ${animal.japaneseName}"></p>

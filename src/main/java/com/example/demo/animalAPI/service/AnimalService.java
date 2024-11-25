@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.example.demo.animalAPI.data.Animals;
 import com.example.demo.animalAPI.repository.AnimalRepository;
-import com.example.demo.sampleAPI.data.Animals;
 
 
 @Service
@@ -26,13 +26,9 @@ public class AnimalService {
 	
 	
 	public  Animals[] Animaldetail(int id) throws IOException{
-		return animalRepository.getAnimals2(id);
+		Animals animal[]= animalRepository.getAnimals2(id);
+		
+		return animal;
 	}	
-	
-	public List<Animals>getAnimals2(int id)throws IOException{
-		//anomalList2にgetAnimals2メソッドでidと紐づいたデータを入れて返す。
-		Animals[] animalsList2 = animalRepository.getAnimals2(id);
-		return Arrays.asList(animalsList2);
-	}
 	
 }

@@ -8,9 +8,9 @@
 		<h1>動物検索画面</h1>
 		<form action="animal-detail" method="get">
 			
-			<select name="animal">
+			<select name="animal.id">
 				<li th:each="animal:${animalsList}">
-					<option th:text="${animal.name}"></option>
+					<option th:text="${animal.name}"th:value="${animal.id}"></option>
 				</li>
 			</select >
 		

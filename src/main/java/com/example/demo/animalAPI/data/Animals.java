@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
-public class AnimalData {
+public class Animals {
 	@JsonProperty("id")
 	private int id;
 	
