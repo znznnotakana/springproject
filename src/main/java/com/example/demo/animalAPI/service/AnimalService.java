@@ -26,7 +26,7 @@ public class AnimalService {
 	
 	
 	public  Animals[] Animaldetail(int id) throws IOException{
-		Animals animal[]= animalRepository.getAnimals2(id);
+		Animals[] animal= animalRepository.getAnimals2(id);
 		
 		return animal;
 	}	

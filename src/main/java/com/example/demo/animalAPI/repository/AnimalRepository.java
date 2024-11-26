@@ -23,7 +23,8 @@ public class AnimalRepository {
 	}
 	public Animals[] getAnimals2(int id) throws IOException{
 		//urlをidに変更し、idと紐づいたデータのみ取得させる。animalList2にデータを返す。
-		String url="https://wsaz0e6z45.execute-api.ap-northeast-1.amazonaws.com/prod/animalsAPI?id="+id;
+		String strId= String.valueOf(id);
+		String url="https://wsaz0e6z45.execute-api.ap-northeast-1.amazonaws.com/prod/animalsAPI?id="+strId;
 		RestTemplate rest =new RestTemplate();
 		ResponseEntity<String>response = rest.getForEntity(url, String.class);
 		String json =response.getBody();

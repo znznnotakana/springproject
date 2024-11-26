@@ -4,10 +4,9 @@
 		<meta charset="utf-8"/>
 				<title>animal-search</title>
 	</head>
-	</ul>
 		<h1>動物詳細画面</h1>
 		
-		<form action="animal-search" method="get">
+<!--		<form action="animal-search" method="get">-->
 			
 			<ul th:each="animal:${animalsList}">
 				<p th:text="'NO: '+${animal.id}"></p>
@@ -15,7 +14,7 @@
 				<p th:text="'和名：' + ${animal.japaneseName}"></p>
 				<p th:text="'鳴き声：' + ${animal.cry}"></p>
 			</ul>
-			
+			<form action="animal-search" method="get">
 			<button type="submit" value="top">トップへ</button>
 		</form>
 		
